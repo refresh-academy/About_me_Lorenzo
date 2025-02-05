@@ -1,32 +1,73 @@
-nav {
-    color:indianred;
-    font: 20px Verdana;
+#std{
+    color: rgb(224, 21, 21);
     margin-bottom: 70px;
     margin-top: 40px;
     display: flex;
     justify-content: space-around;
     border: solid black 2px;
+    background-color: rgb(243, 197, 197);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-    }
+}
+
 h1 {
-    color:darkred;
+    color: darkred;
     text-align: center;
-    }
-h2  {
+}
+
+h2 {
     color: darkred;
     margin: 20px;
-    }
-#block1 {font-family: verdana;
-        margin: 30px;
-        }
-h6  {text-align: center;
+}
+
+#block1 {
+    font-family: verdana;
+    margin: 30px;
+}
+
+h6 {
+    text-align: center;
     color: darkred;
-    }
-#block2 {border: solid black 1px;
-        text-align: center;
-        }
-#block4 {text-align:end;
-        color:gray;
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: 10.5px;
-        }
+}
+
+#block2 {
+    border: solid black 1px;
+    text-align: center;
+    border-color: rgb(251, 192, 192);
+    background-color:rgb(251, 192, 192) ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+
+}
+
+footer {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10.5px;
+    text-align: end;
+   
+}
+
+#block5 {text-align: center;}
+
+#logo { text-align: center;
+        border: solid black 2px;
+}
+
+#contatti {color: black;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            text-align: center;
+}
+#week {border: solid  rgb(197, 134, 134) 1px;
+        background-color: rgb(197, 134, 134) ;
+}
+
+#std1 {text-align: center;
+    display: flex;
+        justify-content: space-around;
+        margin-bottom: 70px;
+    margin-top: 40px;
+    
+}
+
