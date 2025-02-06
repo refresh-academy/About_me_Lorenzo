@@ -1,13 +1,22 @@
-#std{
+p.nav_std {
     color: rgb(224, 21, 21);
-    margin-bottom: 70px;
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-around;
     border: solid black 2px;
     background-color: rgb(243, 197, 197);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
 
+#std_nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(243, 197, 197);
+}
+
+#std {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(243, 197, 197);
 }
 
 h1 {
@@ -34,8 +43,8 @@ h6 {
     border: solid black 1px;
     text-align: center;
     border-color: rgb(251, 192, 192);
-    background-color:rgb(251, 192, 192) ;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(251, 192, 192);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
 
 }
@@ -45,29 +54,95 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10.5px;
     text-align: end;
-   
+
 }
 
-#block5 {text-align: center;}
-
-#logo { text-align: center;
-        border: solid black 2px;
+#block5 {
+    text-align: center;
 }
 
-#contatti {color: black;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 15px;
-            text-align: center;
-}
-#week {border: solid  rgb(197, 134, 134) 1px;
-        background-color: rgb(197, 134, 134) ;
+#logo {
+    text-align: center;
+    border: solid black 2px;
 }
 
-#std1 {text-align: center;
+#contatti {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+#week {
+    border: solid rgb(197, 134, 134) 1px;
+    background-color: rgb(197, 134, 134);
+}
+
+#std1 {
+    text-align: center;
     display: flex;
-        justify-content: space-around;
-        margin-bottom: 70px;
+    justify-content: space-around;
+    margin-bottom: 70px;
     margin-top: 40px;
-    
+
 }
 
+#refresh_website {
+    text-align: center;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+}
+
+button.torna-su {
+    padding: 10px 20px;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(251, 192, 192);
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#button {
+    text-align: center;
+}
+
+button.torna-su:hover {
+    background-color: rgb(197, 134, 134);
+    transform: scale(1.1);
+
+}
+
+
+
+button.week-button {
+    padding: 5px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 20px;
+    font-family: fantasy;
+    color: black;
+    background-color: lightsalmon;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.week-button:hover {
+    background-color: rgb(197, 134, 134);
+    transform: scale(1.1);
+}
+
+#weekly_line {
+    border: solid black 1px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 175, 175);
+    border-radius: 20px;
+}
+
+ul.weekly {
+    background-color: rgb(249, 194, 194);
+    border-radius: 20px;
+}
