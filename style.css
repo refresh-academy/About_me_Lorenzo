@@ -1,4 +1,5 @@
-p.nav_std {  /*barra nav in alto singoli comonenti: home-refresh-contatti*/
+p.nav_std {
+    /*barra nav in alto singoli comonenti: home-refresh-contatti*/
     color: rgb(224, 21, 21);
     border: solid black 2px;
     background-color: rgb(243, 197, 197);
@@ -7,11 +8,13 @@ p.nav_std {  /*barra nav in alto singoli comonenti: home-refresh-contatti*/
     border-radius: 10px;
 }
 
-#std_nav { /*barra nav in alto: home-refresh-contatti*/
+#std_nav {
+    /*barra nav in alto: home-refresh-contatti*/
     display: flex;
     justify-content: space-around;
     background-color: rgb(243, 197, 197);
 }
+
 h1 {
     color: darkred;
     text-align: center;
@@ -20,19 +23,23 @@ h1 {
 h2 {
     color: darkred;
     margin: 20px;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
-.block1 { /*testo: mi chiamo Lorenzo e ho 27 anni + animale totem*/
+.block1 {
+    /*testo: mi chiamo Lorenzo e ho 27 anni + animale totem*/
     font-family: verdana;
-    margin: 30px;
+    margin: 50px;
 }
 
-h6 { /*animale totem*/
+h6 {
+    /*animale totem*/
     text-align: center;
     color: darkred;
 }
-footer { /*copyright Lorenzo*/
+
+footer {
+    /*copyright Lorenzo*/
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10.5px;
@@ -40,16 +47,19 @@ footer { /*copyright Lorenzo*/
 
 }
 
-#block5 { /*allineamento immagini: decoro-panda-decoro*/
+#block5 {
+    /*allineamento immagini: decoro-panda-decoro*/
     text-align: center;
 }
 
-#logoo { /*logo refresh academy in alto*/
+#logoo {
+    /*logo refresh academy in alto*/
     text-align: center;
-   
+
 }
 
-#contatti { /*info contatti in fondo*/
+#contatti {
+    /*info contatti in fondo*/
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
@@ -57,12 +67,14 @@ footer { /*copyright Lorenzo*/
     font-style: italic;
 }
 
-#week { /* std_nav (home-refresh-contatti) + h1 (week inizio pagina)*/
+#week {
+    /* std_nav (home-refresh-contatti) + h1 (week inizio pagina)*/
     border: solid rgb(197, 134, 134) 1px;
     background-color: rgb(197, 134, 134);
 }
 
-#std1 { /*link: approfondimento panda + animale totem*/
+#std1 {
+    /*link: approfondimento panda + animale totem*/
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -71,14 +83,16 @@ footer { /*copyright Lorenzo*/
 
 }
 
-#refresh_website { /*link OFFICIAL WEBSITE*/
+#refresh_website {
+    /*link OFFICIAL WEBSITE*/
     text-align: center;
     margin: 10px;
     border: 10px;
     padding: 10px;
 }
 
-button.torna-su { /* edit bottone */
+button.torna-su {
+    /* edit bottone */
     padding: 10px 20px;
     font-size: 10px;
     color: rgb(0, 0, 0);
@@ -125,9 +139,3 @@ button.week-button:hover {
     background-color: rgb(255, 175, 175);
     border-radius: 20px;
 }
-
-ul.weekly {
-    background-color: rgb(249, 194, 194);
-    border-radius: 20px;
-}
-
