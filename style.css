@@ -1,4 +1,4 @@
-p.nav_std {
+p.nav_std {  /*barra nav in alto singoli comonenti: home-refresh-contatti*/
     color: rgb(224, 21, 21);
     border: solid black 2px;
     background-color: rgb(243, 197, 197);
@@ -7,18 +7,11 @@ p.nav_std {
     border-radius: 10px;
 }
 
-#std_nav {
+#std_nav { /*barra nav in alto: home-refresh-contatti*/
     display: flex;
     justify-content: space-around;
     background-color: rgb(243, 197, 197);
 }
-
-#std {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(243, 197, 197);
-}
-
 h1 {
     color: darkred;
     text-align: center;
@@ -27,29 +20,19 @@ h1 {
 h2 {
     color: darkred;
     margin: 20px;
+    text-decoration:underline;
 }
 
-#block1 {
+.block1 { /*testo: mi chiamo Lorenzo e ho 27 anni + animale totem*/
     font-family: verdana;
     margin: 30px;
 }
 
-h6 {
+h6 { /*animale totem*/
     text-align: center;
     color: darkred;
 }
-
-#block2 {
-    border: solid black 1px;
-    text-align: center;
-    border-color: rgb(251, 192, 192);
-    background-color: rgb(251, 192, 192);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-
-}
-
-footer {
+footer { /*copyright Lorenzo*/
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10.5px;
@@ -57,28 +40,29 @@ footer {
 
 }
 
-#block5 {
+#block5 { /*allineamento immagini: decoro-panda-decoro*/
     text-align: center;
 }
 
-#logo {
+#logoo { /*logo refresh academy in alto*/
     text-align: center;
-    border: solid black 2px;
+   
 }
 
-#contatti {
+#contatti { /*info contatti in fondo*/
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
     text-align: center;
+    font-style: italic;
 }
 
-#week {
+#week { /* std_nav (home-refresh-contatti) + h1 (week inizio pagina)*/
     border: solid rgb(197, 134, 134) 1px;
     background-color: rgb(197, 134, 134);
 }
 
-#std1 {
+#std1 { /*link: approfondimento panda + animale totem*/
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -87,14 +71,14 @@ footer {
 
 }
 
-#refresh_website {
+#refresh_website { /*link OFFICIAL WEBSITE*/
     text-align: center;
     margin: 10px;
     border: 10px;
     padding: 10px;
 }
 
-button.torna-su {
+button.torna-su { /* edit bottone */
     padding: 10px 20px;
     font-size: 10px;
     color: rgb(0, 0, 0);
@@ -146,3 +130,4 @@ ul.weekly {
     background-color: rgb(249, 194, 194);
     border-radius: 20px;
 }
+
