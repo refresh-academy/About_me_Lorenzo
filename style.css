@@ -153,6 +153,7 @@ button.week-button:hover {
             padding: 20px;
             border-radius: 20px;
             background-color:rgb(243, 197, 197) ;
+            box-shadow: 0 0 20px rgba(0, 0, 0,5);
 }
 
 
