@@ -92,7 +92,7 @@ footer {
 }
 
 button.torna-su {
-    /* edit bottone torna_su */
+    /* edit bottone torna_su e anche barra nav*/
     padding: 10px 20px;
     font-size: 10px;
     color: rgb(0, 0, 0);
@@ -101,6 +101,7 @@ button.torna-su {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0,2);
 }
 
 #button {
@@ -127,6 +128,7 @@ button.week-button {
     background-color: lightsalmon;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0,2);
 }
 
 button.week-button:hover {
@@ -142,9 +144,11 @@ button.week-button:hover {
     justify-content: space-around;
     background-color: rgb(255, 175, 175);
     border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0,2);
 }
 
-.body_week { display: flex;
+.body_week {    /*riquadri singole attività delle week*/
+     display: flex; 
             display:fixed;
             justify-content: space-around;
             margin: 50px;
@@ -153,7 +157,7 @@ button.week-button:hover {
             padding: 20px;
             border-radius: 20px;
             background-color:rgb(243, 197, 197) ;
-            box-shadow: 0 0 20px rgba(0, 0, 0,5);
+            box-shadow: 0 0 20px rgba(0, 0, 0,2);
 }
 
 
