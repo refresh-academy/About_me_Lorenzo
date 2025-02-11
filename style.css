@@ -47,9 +47,11 @@ footer {
 
 }
 
-#block5 {
+.block5 {display: flex;
+    justify-content: space-around;
+    
     /*allineamento immagini: decoro-panda-decoro*/
-    text-align: center;
+   
 }
 
 #logoo {
