@@ -95,6 +95,8 @@ function onDeleteLastAddedItem() {
   // 1. remove the last item in the todoList array using the array function pop()
   // 2. print the list of the items to the console using a "for" loop
   //
+  todoList.pop();
+  refreshTodolistElements();
 
 }
 
