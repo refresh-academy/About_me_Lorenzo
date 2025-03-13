@@ -105,7 +105,8 @@ function onReverseBtnClick() {
   // write your code here below...
   // 1. use the array function reverse()
   // 2. print the list of the items to the console using a "while" loop
-
+  todoList.reverse();
+  refreshTodolistElements();
 }
 
 function onHideDoneTaskElemClick() {
@@ -113,7 +114,7 @@ function onHideDoneTaskElemClick() {
   // write your code here below...
   // 1. print the list of NOT completed tasks using the "for .. of" loop
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
-
+  for (let i; )
 }
 
 function onShowDoneAtTheBottomClick() {
