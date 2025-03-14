@@ -96,7 +96,12 @@ function onDeleteLastAddedItem() {
   // 2. print the list of the items to the console using a "for" loop
   //
   todoList.pop();
-  refreshTodolistElements();
+  //refreshTodolistElements();
+  for (let i; todoList.length < i; i++){
+    let listaElementiiTodo = todoList[i];{
+      console.log(listaElementiiTodo);
+    }
+  }
 
 }
 
@@ -106,7 +111,11 @@ function onReverseBtnClick() {
   // 1. use the array function reverse()
   // 2. print the list of the items to the console using a "while" loop
   todoList.reverse();
-  refreshTodolistElements();
+  let i = 0
+  while ( i < todoList.length ){
+    console.log(todoList[i]);
+  }
+  //refreshTodolistElements();
 }
 
 function onHideDoneTaskElemClick() {
@@ -114,7 +123,17 @@ function onHideDoneTaskElemClick() {
   // write your code here below...
   // 1. print the list of NOT completed tasks using the "for .. of" loop
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
-  for (let i; )
+ let filteredTask = []
+ 
+  for (let task of todoList){
+  if (!task.done) {
+    filteredTask.push(task)
+  }
+ }
+
+
+
+
 }
 
 function onShowDoneAtTheBottomClick() {
