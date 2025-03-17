@@ -151,9 +151,9 @@ for (i = 0 ; i < todoList.length ; i++){
     console.log("DONE", todoList[i]);
   }
 }
-  for (j = 0; j < todoList.length ; j++){
+  for (i = 0; i < todoList.length ; i++){
     if (todoList.done[i]== true) {
-      console.log("NOT DONE" ,todoList[j])
+      console.log("NOT DONE" ,todoList[i])
     }
   }
 
