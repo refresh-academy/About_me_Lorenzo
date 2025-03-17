@@ -8,7 +8,7 @@ const todoListElem = document.getElementById('todo-list'); // questo e' <UL>
 let todoList = [];  // questo e' il nostro modello. Un array di oggetti. Ogni oggetto e' un TODO
 
 // questa funzione crea un nuovo elemento <LI> e lo aggiunge alla lista <UL>
-function aggiungiTodoAllaLista(todoObj){
+function aggiungiTodoAllaLista(todoObj) {
   // Creo un nuovo <LI> - questo NON e' ancora dentro il DOM - e' solo JS - NON e' visibile
   const listItemElem = document.createElement('li');
 
@@ -16,9 +16,9 @@ function aggiungiTodoAllaLista(todoObj){
   const checkboxElem = document.createElement('input');
   checkboxElem.type = 'checkbox';
   checkboxElem.checked = todoObj.done; // Set initial checked state
-  checkboxElem.addEventListener('change', function() {
-      todoObj.done = checkboxElem.checked; // Update the completed status in the array
-      refreshTodolistElements(); // Re-render to update styles
+  checkboxElem.addEventListener('change', function () {
+    todoObj.done = checkboxElem.checked; // Update the completed status in the array
+    refreshTodolistElements(); // Re-render to update styles
   });
 
   listItemElem.appendChild(checkboxElem);
@@ -75,10 +75,10 @@ regClickEvent("btn-calc-stats", onCalcStatsClick);
 
 
 
-todoInputElem.addEventListener('keydown', function(event) {
+todoInputElem.addEventListener('keydown', function (event) {
   if (event.key === 'Enter') {
-      event.preventDefault(); // Prevent the default form submission
-      onAddTodoClick();
+    event.preventDefault(); // Prevent the default form submission
+    onAddTodoClick();
   }
 });
 todoInputElem.focus();
@@ -97,8 +97,8 @@ function onDeleteLastAddedItem() {
   //
   todoList.pop();
   //refreshTodolistElements();
-  for (let i; todoList.length < i; i++){
-    let listaElementiiTodo = todoList[i];{
+  for (let i; todoList.length < i; i++) {
+    let listaElementiiTodo = todoList[i]; {
       console.log(listaElementiiTodo);
     }
   }
@@ -112,7 +112,7 @@ function onReverseBtnClick() {
   // 2. print the list of the items to the console using a "while" loop
   todoList.reverse();
   let i = 0
-  while ( i < todoList.length ){
+  while (i < todoList.length) {
     console.log(todoList[i]); i++;
   }
   //refreshTodolistElements();
@@ -123,16 +123,16 @@ function onHideDoneTaskElemClick() {
   // write your code here below...
   // 1. print the list of NOT completed tasks using the "for .. of" loop
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
- let filteredTask = []
- 
-  for (let task of todoList){
-  if (!task.done) {
-    filteredTask.push(task)
+  let filteredTask = []
+
+  for (let task of todoList) {
+    if (!task.done) {
+      filteredTask.push(task)
+    }
   }
- }
- todoList = filteredTask;
- refreshTodolistElements();
-console.log(filteredTask);
+  todoList = filteredTask;
+  refreshTodolistElements();
+  console.log(filteredTask);
 
 
 
@@ -145,17 +145,17 @@ function onShowDoneAtTheBottomClick() {
   // 1. loop over the tasks and print only the not completed
   // 2. loop again over the tasks and print the completed ones
 
-} 
-for (i = 0 ; i < todoList.length ; i++){
-  if (todoList.done[i] == false){
-    console.log("DONE", todoList[i]);
+}
+for (i = 0; i < todoList.length; i++) {
+  if (todoList.done[i] == false) { //(!todoList.done[i])
+    console.log("NOT DONE", todoList[i]);
   }
 }
-  for (i = 0; i < todoList.length ; i++){
-    if (todoList.done[i]== true) {
-      console.log("NOT DONE" ,todoList[i])
-    }
+for (i = 0; i < todoList.length; i++) {
+  if (todoList.done[i] == true) {
+    console.log("DONE", todoList[i])
   }
+}
 
 function onMarkAllAsDoneClick() {
   console.log("Mark all task as done")
@@ -178,9 +178,17 @@ function onShowOnlyShortTasks() {
   // 1. Use a for loop to iterate through the todoList array.
   // 2. Inside the loop, use the continue keyword to skip tasks with descriptions longer than 10 characters.
   // 3. Print the short tasks to the console.
+
+  let i = 0
+  let filter = []
+  for (let task of todoList) {
+    if (task.textTodo.length < 11) {
+      filter.push(task);
+    }
+  }
+  console.log(filter);
+
 }
-
-
 // --------------------------------------------------------------
 // Array & Iterators --------------------------------------------
 // --------------------------------------------------------------
