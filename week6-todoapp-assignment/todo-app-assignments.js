@@ -113,7 +113,7 @@ function onReverseBtnClick() {
   todoList.reverse();
   let i = 0
   while ( i < todoList.length ){
-    console.log(todoList[i]);
+    console.log(todoList[i]); i++;
   }
   //refreshTodolistElements();
 }
@@ -130,7 +130,9 @@ function onHideDoneTaskElemClick() {
     filteredTask.push(task)
   }
  }
-
+ todoList = filteredTask;
+ refreshTodolistElements();
+console.log(filteredTask);
 
 
 
@@ -143,7 +145,17 @@ function onShowDoneAtTheBottomClick() {
   // 1. loop over the tasks and print only the not completed
   // 2. loop again over the tasks and print the completed ones
 
+} 
+for (i = 0 ; i < todoList.length ; i++){
+  if (todoList.done[i] == false){
+    console.log("DONE", todoList[i]);
+  }
 }
+  for (j = 0; j < todoList.length ; j++){
+    if (todoList.done[i]== true) {
+      console.log("NOT DONE" ,todoList[j])
+    }
+  }
 
 function onMarkAllAsDoneClick() {
   console.log("Mark all task as done")
