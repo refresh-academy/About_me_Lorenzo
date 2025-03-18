@@ -144,18 +144,18 @@ function onShowDoneAtTheBottomClick() {
   // write your code here below...
   // 1. loop over the tasks and print only the not completed
   // 2. loop again over the tasks and print the completed ones
+  for (i = 0; i < todoList.length; i++) {
+    if (todoList.done[i] == false) { //(!todoList.done[i])
+      console.log("NOT DONE", todoList[i]);
+    }
+  }
+  for (i = 0; i < todoList.length; i++) {
+    if (todoList.done[i] == true) {
+      console.log("DONE", todoList[i])
+    }
+  }
+}
 
-}
-for (i = 0; i < todoList.length; i++) {
-  if (todoList.done[i] == false) { //(!todoList.done[i])
-    console.log("NOT DONE", todoList[i]);
-  }
-}
-for (i = 0; i < todoList.length; i++) {
-  if (todoList.done[i] == true) {
-    console.log("DONE", todoList[i])
-  }
-}
 
 function onMarkAllAsDoneClick() {
   console.log("Mark all task as done")
@@ -163,13 +163,25 @@ function onMarkAllAsDoneClick() {
   // 1. loop over all the tasks and update the "done" property to "true"
   // 2. print the todoList array to console using
   //    console.log("Todos: ", todoList);   // NOTE the use of the comma "," instead of the plus "+"
-
+  for ( i = 0 ; i < todoList.length; i++){
+    if (todoList[i].done == false) {
+        todoList[i].done = true;
+    }
+}
+console.log(todoList);
+refreshTodolistElements()
 }
 
 function onMarkAllAsNotDoneClick() {
   console.log("Mark all task as NOT done")
   // write your code here below...
 
+for ( i = 0; i < todoList.length ; i++){
+  if (todoList[i].done == true){
+    todoList[i].done = false;
+  }
+}
+refreshTodolistElements();
 }
 
 function onShowOnlyShortTasks() {
